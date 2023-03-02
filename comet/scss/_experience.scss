@@ -1,0 +1,47 @@
+.experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .experience-description {
+        width: 100%;
+    }
+
+    .experience-image {
+        width: 100%;
+        max-height: 400px;
+        display: flex;
+        align-items: center;
+
+        @include for-md {
+            width: calc(40% - 25px);
+        }
+
+        img {
+            width: 100%;
+        }      
+    }
+
+    .experience-subjects {
+        width: 100%;
+
+        @include for-md {
+            width: calc(60% - 25px);
+        }
+
+        // ul {
+        //     // padding: 3px;
+        // }
+
+        li {
+            color: $text-dark-blue;
+            font-size: 12px;
+            font-family: $text-font;
+
+            &::marker {
+                font-size: 24px;
+                color: $text-base-color;
+            }
+        }
+    }
+}
